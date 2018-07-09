@@ -1,0 +1,87 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title helloWiki
+        meta(name="description" content="https://vk.com/id12713633")
+        meta(author="Фронтенд - Денис Чиж" vk="https://vk.com/id12713633" email="denischizh.web@gmail.com")
+        link(rel="stylesheet" href="css/normalize.css")
+        link(rel="stylesheet" href="css/style.css")
+    body.main-page
+        header.main-header
+            div.main-header__cookies
+                div.main-header__cookies-wrapper
+                    p.main-header__cookies-content Мы используем куки для наилучшего представления нашего сайта. Если Вы продолжите использовать сайт, мы будем считать что Вас это устраивает.
+                    button.main-header__cookies-close
+            div.main-header__wrapper
+                a.main-header__logo(href="#")
+                    img.main-header__logo-image(src="img/logo.svg")
+                ul.main-header__navigation
+                    li.main-header__navigation-item
+                        a.main-header__navigation-item-link(href="#") Больше информации
+                    li.main-header__navigation-item
+                        a.main-header__navigation-item-link(href="#") Больше информации
+                    li.main-header__navigation-item
+                        a.main-header__navigation-item-link(href="#") Больше информации
+                    li.main-header__navigation-item
+                        a.main-header__navigation-item-link(href="#") Больше информации    
+                div.main-header__number-section
+                    a.main-header__number(href="8(800)0000001") 8(800)0000001
+        main
+            div.main-page__wrapper
+                div.offers-section
+                    div.offers-section__content
+                        h1.offers-section__title
+                            |Все специальные знания вашего
+                            |бизнеса в собственной 
+                            span.blue-highlight Вики
+                        div.offers-section__offers
+                            p.offers-section__offers-title
+                                |За 
+                                span.blue-highlight 3 дня:
+                            ul.offers-section__offers-list
+                                li.offers-section__offers-item сократим время на обучение новых сотрудников,
+                                li.offers-section__offers-item обезопасим бизнес от утечки кадров
+                                li.offers-section__offers-item поможем формализовать бизнес-процессы
+                                li.offers-section__offers-item научим управлять знаниями компании.
+                    div.offers-section__logo-section                                
+                        img.offers-section__logo(src="img/title-section-logo.svg")            
+                div.demo-section
+                    h2.demo-section__title Демо Вики
+                    p.demo-section__description
+                        |Всё что мы предлагаем можно посмотреть и потрогать бесплатно в 
+                        |
+                        |демонстрационной вики, а в обмен 
+                        span.blue-highlight мы просим разрешение позвонить вам и 
+                        |
+                        |обсудить, каким образом вики-страницы можно применить в вашем случае.
+                    form.demo-section__form
+                        //input.demo-section__input(placeholder="Введите номер телефона без кода страны")
+                        div.textarea-placeholder
+                            textarea.demo-section__textarea(id="phone-field")
+                            span.textarea-placeholder__line
+                            div
+                                | Введите номер телефона<br />
+                                | без кода страны
+                             
+                        button.demo-section__submit(type="button") Оставить заявку
+                    p.demo-section__disclaimer
+                        |Нажимая на кнопку, вы даете 
+                        span.underline согласие 
+                        |на обработку своих персональных данных
+        footer.main-footer
+            div.main-footer__wrapper
+                p.main-footer__contacts.
+                    © 2017  ИП “Раздватри”
+                    115419, г. Москва, 2-ой Рощинский проезд,
+                    д. 0 стр. 0, оф. 000 тел.: (499) 999-99-99
+                        
+
+
+
+
+
+        script(src="js/jquery-3.3.1.min.js")
+        script(src="js/jquery.maskedinput.min.js")
+        script(src="js/script.js")

@@ -1,0 +1,134 @@
+.main-header
+	&__cookies
+		background: #7289DA
+		&-wrapper
+			display: flex
+			+mixinContainer
+		&-content
+			margin: 0
+			color: $white
+			font-size: 14px
+			padding: 8px 8px 8px 0
+			text-transform: uppercase
+		&-close
+			background: url(../img/cross.svg) no-repeat center
+			border: none
+			cursor: pointer
+			&:active, &:focus
+				outline: none
+	&__navigation
+		list-style: none
+		padding: 0
+		margin: 0
+		display: flex
+		padding-left: 16px
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			left: 0
+			top: 2px
+			width: 4px
+			height: 85%
+			border: 2px solid $white
+			background: $blue
+		&-item
+			width: 8.333em
+			line-height: 28px
+			display: flex
+			align-items: center
+			&-link
+				text-transform: uppercase
+				font-size: 1em
+				color: $blue
+				font-family: "Ubuntu Condensed", Times, serif
+				transition: all 0.3s ease-in-out
+				&:hover
+					color: $black
+	&__number
+		white-space: nowrap
+		color: $blue
+		font-size: 1.5em
+		padding-left: 48px
+		background: url(../img/phone-icon.svg) no-repeat 16px 14px
+		background-size: 24px
+		text-decoration: none
+		height: 100%
+		display: flex
+		align-items: center
+		font-family: "PT Mono", Times, serif
+		//font-size: 36px
+		font-weight: 700
+		transition: all 0.3s ease-in-out
+		&:hover
+			color: $black
+		&:active
+			opacity: .7
+		&-section
+			//margin-bottom: 10px
+			display: flex
+			justify-content: flex-end
+			flex-grow: 1
+			margin-right: 6%
+	&__wrapper
+		padding-top: 8px
+		display: flex
+		+mixinContainer
+		
+@media (max-width: $small-desktop-widths-max)
+	.main-header
+		&__wrapper
+			justify-content: flex-start
+		&__navigation
+			&-item
+				width: 100px
+				margin-right: 24px
+				&-link
+					font-size: 16px
+		&__number
+			font-size: 24px
+			padding-left: 40px
+			background: url(../img/phone-icon.svg) no-repeat 8px 16px
+			background-size: 20px
+			&-section
+				display: flex
+				justify-content: flex-end
+				flex-grow: 1
+		
+				
+@media (max-width: $tablet-widths-only-max)
+	.main-header
+		&__cookies
+			&-content
+				font-size: 10px
+				line-height: 11px
+		&__number
+			font-size: 18px
+			line-height: 21px
+			padding-left: 30px
+			background: url(../img/phone-icon.svg) no-repeat 8px 14px
+			background-size: 14px
+			&-section
+				margin-right: 0
+		&__logo
+			width: 100px
+			&-image
+				width: 100%
+				height: 100%
+		&__navigation
+			padding-left: 0
+			margin-top: 8px
+			&:after
+				display: none
+				
+@media (max-width: $small-mobile-widths-only)
+	.main-header
+		&__navigation
+			flex-wrap: wrap
+			&-item
+				width: 50%
+				margin-right: 0
+				&-link
+					display: block
+					width: 45%
+					min-width: 100px

@@ -1,0 +1,39 @@
+=mixinContainer
+  box-sizing: border-box
+  //min-width: 1320px
+  //max-width: 1800px
+  width: 1320px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 0 auto
+  @media only screen and (min-width: $small-desktop-widths) and (max-width: $small-desktop-widths-max)
+      box-sizing: border-box
+      padding-left: 20px
+      padding-right: 20px
+      //max-width: none
+      //min-width: auto
+      width: 100%
+
+  @media only screen and (max-width: $tablet-widths-only-max) and (min-width: $tablet-widths-only-min)
+      box-sizing: border-box
+      padding-left: 20px
+      padding-right: 20px
+      width: auto
+
+  @media only screen and (max-width: $mobile-widths-only)
+      box-sizing: border-box
+      padding-left: 10px
+      padding-right: 10px
+      width: auto
+
+
+=ca 
+  display: inline-block
+  list-style: none
+  
+.hidden
+  display: none
+
+=transition($target, $delay, $effect)
+  transition: $target, $delay, $effect
+    

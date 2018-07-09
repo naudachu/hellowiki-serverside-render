@@ -1,0 +1,26 @@
+.main-footer
+	&__wrapper
+		display: flex
+		justify-content: flex-end
+		+mixinContainer
+	&__contacts
+		margin: 0
+		font-size: 10px
+		line-height: 11px
+		text-transform: uppercase
+		color: $lightblue
+		font-family: "Ubuntu Condensed", Times, serif
+		width: 184px
+		margin-bottom: 2em
+		
+@media (max-width: $tablet-widths-only-max)
+	.main-footer
+		&__wrapper
+			margin-top: 0
+			
+@media (max-width: $small-mobile-widths-only)
+	.main-footer
+		&__wrapper
+			margin-top: 32px
+			display: flex
+			justify-content: center

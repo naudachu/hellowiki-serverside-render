@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "nodemon server.js -e js, pug",
-    "start": "pm2 start server.js"  
+    "start": "forever start server.js"
   },
   "repository": {
     "type": "git",
